@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="img/logo.png" class="logo" alt="logo">
+            <div class="header-text">
+                <h1>L'apprentissage<br> est  la clé de la réussite !</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Asperiores suscipit itaque laudantium, officiis ipsa molestiae optio fugiat beatae recusandae nulla architecto inventore vel tempore, 
+                    repellat, omnis vero nam. Corrupti, distinctio!</p>
+                    <button class="common-btn">Read-Me</button>
+                    <div class="line">
+                        <span class="line-1"></span><br>
+                        <span class="line-2"></span><br>
+                        <span class="line-3"></span>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nav -->
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">FEATURES</a></li>
+            <li><a href="">COURSES</a></li>
+            <li><a href="">OFFER</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </nav>
+    <img src="img/menu.png" alt="icon menu burger" id="menuBtn">
+
+
+    <!--  About -->
+
+    <section id="about">
+        <div class="about-left-col">
+            <img src="img/about.png" alt="about">
+
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Officiis repellat omnis amet saepe dolorum expedita obcaecati, 
+                     accusamus illo perferendis qui neque 
+                    totam quidem repellendus velit aspernatur quo? Quos, vel aliquid.</p>
+                    <h2>"L'apprentissage ne se fait pas par hasard, il doit être recherché avec ardeur et soigné avec diligence"</h2>
+                    <h3>----Abigail Adams</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+
+    <section id="features">
+        <div class="features-row">
+            <div class="features-col">
+                <img src="img/pic-1.png" alt="représentation d'une idée , ampoule">
+                <h4>Apprendre n'importe où!</h4>
+                <p>Basculez entre votre ordinateur, votre tablette ou votre appareil mobile!</p>
+            </div>
+            <div class="features-col">
+                <img src="img/pic-2.png" alt="représentation d'un cerveau">
+                <h4>L'ensseignement!</h4>
+                <p>Apprenez des experts de l'industrie passionnés par l'enseignement!</p>
+            </div>
+            <div class="features-col">
+                <img src="img/pic-3.png" alt="représentation d'une fusée">
+                <h4>Accès illimité</h4>
+                <p>Choisissez ce que vous souhaitez apprendre!</p>
+            </div>
+        </div>
+        <div class="feature-btn">
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+            <button class="common-btn">Essai gratuit</button>
+        </div>
+    </section>
+
+    <!-- Courses -->
+
+    <section id="courses">
+        <div class="container course-row">
+            <div class="course-left-col">
+                <div class="course-text">
+                    <h1>parcourir nos meilleurs<br>cours!</h1>
+                    <span class="square"></span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro magnam quaerat veritatis aliquid deserunt, consectetur ut esse corporis.
+                         Ipsa expedita cum laborum magnam commodi voluptate vero eligendi reiciendis quaerat voluptas?</p>
+                        <button class="common-btn">Voir tous les cours</button>
+                        <div class="line">
+                            <span class="line-1"></span><br>
+                            <span class="line-2"></span><br>
+                            <span class="line-3"></span>
+                        </div>
+                </div>
+            </div>
+            <div class="course-right-col">
+                <img src="img/course.png" alt="roue des compétences">
+            </div>
+        </div>
+    </section>
+
+    <!--  offer -->
+
+    <section id="offer">
+        <div class="about-left-col">
+            <img src="img/offer.png" alt="about">
+    
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>Apprentissage illimité,<br>possibilités ilimité</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Officiis repellat omnis amet saepe dolorum expedita obcaecati,
+                    accusamus illo perferendis qui neque
+                    totam quidem repellendus velit aspernatur quo? Quos, vel aliquid.</p>
+                    <button class="common-btn">Essai gratuit</button>
+                    <div class="line">
+                        <span class="line-1"></span><br>
+                        <span class="line-2"></span><br>
+                        <span class="line-3"></span>
+                    </div>
+               
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        let menuBtn = document.getElementById("menuBtn");
+        let sideNav = document.getElementById("sideNav");
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }else{
+                sideNav.style.right = "-250px"
+            }
+        }
+    </script>
+</body>
+</html>
